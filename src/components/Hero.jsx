@@ -29,7 +29,7 @@ const Hero = () => {
               }`}
             >
               <li onClick={() => setFirst(true)}>
-                <a
+                < a
                   className="fw_500 ff_Bold ff_Medium fs_sm clr_white mb-0  position-relative hover_line home nav_effect"
                   href="#"
                 >
@@ -70,7 +70,7 @@ const Hero = () => {
         </Container>
       </div>
       <div className="text-centerd py-5 flex-grow-1 py-xl-0 d-flex align-items-center justify-content-center">
-        <p className="fw_900 ff_Heavy clr_white fs_2xl lh_156 text-uppercase">
+        <p className="fw_900 clr_white fs_2xl lh_156 text-uppercase">
           3D Product <span className=" d-block">Animation</span>
         </p>
       </div>
