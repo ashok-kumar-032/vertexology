@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import flower from "../assets/img/flower.webp";
 import portfolios3 from "../assets/img/light.webp";
 import portfolios4 from "../assets/img/portfolios4.webp";
-import char from "../assets/img/headphone_img.gif";
+import char from "../assets/img/char.png";
 const Ourportfolios = () => {
   var ourportfolios = {
     dots: false,
