@@ -46,7 +46,8 @@
 
 :root {
 
-  --fs-2xl: 122px;
+  --fs-3xl: 138px;
+  --fs-2xl: 123px;
   --fs-xl: 65px;
   --fs-lg: 45px;
   --fs-md: 20px;
@@ -136,6 +137,10 @@
 }
 
 /* font_size */
+
+.fs_3xl {
+  font-size: var(--fs-3xl);
+}
 
 .fs_2xl {
   font-size: var(--fs-2xl);
