@@ -43,7 +43,7 @@
   --fs-md: 20px;
   --fs-sm: 16px;
   --fs-xsm: 14px;
-  --color-clr_blue: #000000;
+  --color-clr_black: #070707 !important;
   --color-clr_white: #ffffff;
   --color-clr_white_1: #f2f2f2;
   --color-clr_white_2: #e1e1e1;
@@ -60,8 +60,8 @@
   --color-clr_footer: #b7bcc0;
   --color-clr_light_blue: #3671e9;
 }
-.clr_blue {
-  color: var(--color-clr_blue) !important;
+.clr_black {
+  color: var(--color-clr_black) !important;
 }
 .clr_white {
   color: var(--color-clr_white) !important;
