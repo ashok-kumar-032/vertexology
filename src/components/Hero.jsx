@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Nav, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { RxCross1 } from "react-icons/rx";
 import nav_logo from "../assets/img/nav_logo.webp";
 import { BiMenu } from "react-icons/bi";
@@ -14,12 +14,12 @@ const Hero = () => {
     document.body.classList.remove("overflow-hidden");
   }
   return (
-    <section className="hero_bg hero_height">
-      <Nav className="py-3">
+    <section className="hero_bg vh_100 d-flex flex-column">
+      <div className="py-3">
         <Container>
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
-              <span className="d-flex align-items-center pointer">
+              <span className="d-flex align-items-center pointer z_10">
                 <img className="w-75" src={nav_logo} alt="nav_logo" />
               </span>
             </div>
@@ -30,23 +30,23 @@ const Hero = () => {
             >
               <li onClick={() => setFirst(true)}>
                 <a
-                  className="mb-0 ff_Bold ff_Medium fw_600 fs_sm clr_grey position-relative hover_line home nav_effect"
+                  className="fw_500 ff_Bold ff_Medium fs_sm clr_white mb-0  position-relative hover_line home nav_effect"
                   href="#"
                 >
-                  Benefits
+                  Home
                 </a>
               </li>
               <li onClick={() => setFirst(true)}>
                 <a
-                  className="mb-0 ff_Bold ff_Medium fw_600 fs_sm clr_grey position-relative hover_line home nav_effect"
+                  className="fw_500 ff_Bold ff_Medium fs_sm clr_white mb-0 position-relative hover_line home nav_effect"
                   href="#"
                 >
-                  Privacy
+                  About
                 </a>
               </li>
               <li onClick={() => setFirst(true)}>
                 <a
-                  className="mb-0 ff_Bold ff_Medium fw_600 fs_sm clr_grey position-relative hover_line home nav_effect"
+                  className="fw_500 ff_Bold ff_Medium fs_sm clr_white mb-0 position-relative hover_line home nav_effect"
                   href="#"
                 >
                   Products
@@ -54,42 +54,26 @@ const Hero = () => {
               </li>
               <li onClick={() => setFirst(true)}>
                 <a
-                  className="mb-0 ff_Bold ff_Medium fw_600 fs_sm clr_grey position-relative hover_line home nav_effect"
+                  className="fw_500 ff_Bold ff_Medium fs_sm clr_white mb-0 position-relative hover_line home nav_effect"
                   href="#"
                 >
-                  App
+                  Contact Us
                 </a>
-              </li>
-              <li onClick={() => setFirst(true)}>
-                <a
-                  className="mb-0 ff_Bold ff_Medium fw_600 fs_sm clr_grey position-relative hover_line home nav_effect"
-                  href="#"
-                >
-                  Features
-                </a>
-              </li>
-              <li onClick={() => setFirst(true)}>
-                <a
-                  className="mb-0 ff_Bold ff_Medium fw_600 fs_sm clr_grey me-xl-4 position-relative hover_line home nav_effect"
-                  href="#"
-                >
-                  FAQs
-                </a>
-              </li>
-              <li onClick={() => setFirst(true)}>
-                <button className="red_btn mb-0 ff_Montserrat fw_500 fs_xsm clr_white nav_btn overflow-hidden position-relative">
-                  Get started
-                </button>
               </li>
             </ul>
-            <div className="z-10 d-lg-none">
+            <div className="z_10 d-md-none">
               <h3 className="clr_white menu_icon" onClick={clickshow}>
                 {first ? <BiMenu /> : <RxCross1 />}
               </h3>
             </div>
           </div>
         </Container>
-      </Nav>
+      </div>
+      <div className="text-centerd py-5 flex-grow-1 py-xl-0 d-flex align-items-center justify-content-center">
+        <p className="fw_900 ff_Heavy clr_white fs_2xl lh_156 text-uppercase">
+          3D Product <span className=" d-block">Animation</span>
+        </p>
+      </div>
     </section>
   );
 };
