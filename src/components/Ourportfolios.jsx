@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import flower from "../assets/img/flower.webp";
 import portfolios3 from "../assets/img/light.webp";
 import portfolios4 from "../assets/img/portfolios4.webp";
+import char from "../assets/img/headphone_img.gif";
 const Ourportfolios = () => {
   var ourportfolios = {
     dots: false,
@@ -13,22 +14,31 @@ const Ourportfolios = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    centerMode: true,
-    
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+    ],
   };
   const first = React.useRef();
   return (
     <>
-      <section className="py-5 overflow-hidden bg_layer">
-        <Container className="py-5">
+      <section className="py-5 overflow-hidden bg_layer position-relative">
+        <Container className="py-lg-5 my-xl-4">
           <Row className="my-5 py-5">
-            <Col>
+            <Col lg={7} xl={8}>
               <p className="ff_Heavy fw_900 text-uppercase fs_lg lh_58 clr_black">
                 Nisi et diam euismod
                 <span className="d-block">suspendisse tristique quis</span>
               </p>
             </Col>
-            <Col lg={4}>
+            <Col lg={5} xl={4}>
               <p className="ff_light fw_400 clr_black opacity_7">
                 Tincidunt phasellus id imperdiet lorem blandit. Congue donec
                 scelerisque congue pellentesque.
@@ -36,12 +46,13 @@ const Ourportfolios = () => {
               <Btnred textbtn="Contact Us" />
             </Col>
           </Row>
+          <div className="space_200px leftline"></div>
           <div className="d-flex align-items-center justify-content-between mb-4">
             <p className="ff_Heavy fw_900 text-uppercase fs_xl clr_black mb-0">
               Our Portfolios
             </p>
             <div className="d-flex gap-3">
-              <span>
+              <span className="btnarrows">
                 <svg
                   onClick={() => first.current.slickPrev()}
                   width="54"
@@ -91,7 +102,7 @@ const Ourportfolios = () => {
                   </defs>
                 </svg>
               </span>
-              <span>
+              <span className="btnarrows">
                 <svg
                   onClick={() => first.current.slickNext()}
                   width="54"
@@ -134,16 +145,16 @@ const Ourportfolios = () => {
             </div>
           </div>
           <Slider {...ourportfolios} className="portfolios" ref={first}>
-            <div className="px-2">
+            <div className="py-1 px_12px">
               <img src={flower} alt="flower" className="w-100" />
             </div>
-            <div className="px-2">
-              <img src={flower} alt="flower" className="w-100" />
+            <div className="py-1 px_12px">
+              <img src={char} alt="char" className="w-100" />
             </div>
-            <div className="px-2">
+            <div className="py-1 px_12px">
               <img src={portfolios3} alt="portfolios3" className="w-100" />
             </div>
-            <div className="px-2">
+            <div className="py-1 px_12px">
               <img src={portfolios4} alt="portfolios3" className="w-100" />
             </div>
           </Slider>

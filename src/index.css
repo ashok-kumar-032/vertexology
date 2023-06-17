@@ -35,7 +35,6 @@
   font-family: "Regular" !important;
 }
 :root {
-
   --fs-3xl: 138px;
   --fs-2xl: 50px;
   --fs-xl: 65px;
@@ -44,20 +43,20 @@
   --fs-sm: 16px;
   --fs-xsm: 14px;
   --color-clr_blue: #000000;
-  --color-clr_white: #FFFFFF !important;
-  --color-clr_white_1: #F2F2F2;
-  --color-clr_white_2: #E1E1E1;
-  --color-clr_red: #C51303;
-  --color-clr_nav: #50515C !important;
+  --color-clr_white: #ffffff !important;
+  --color-bg_white_1: #e3e3e3 !important;
+  --color-clr_white_2: #e1e1e1;
+  --color-clr_red: #c51303;
+  --color-clr_nav: #50515c !important;
   --color-bg_red_aco: #841002;
   --color-clr_grey: #a6a6a6;
   --color-clr_grey_1: #878787;
   --color-bg_black_aco: #232323;
   --color-bg_on_red: #e80f0f;
-  --color-bg_black: #000000;
+  --color-bg_black_1: #1e1e1e !important;
   --color-bg_red: #c51303;
   --color-bg_light_black: #121212;
-  --color-clr_orange: #FE5000 !important;
+  --color-clr_orange: #fe5000 !important;
   --color-clr_input: #404040 !important;
 }
 .clr_black {
@@ -97,10 +96,12 @@
 .bg_black {
   background-color: var(--color-bg_black) !important;
 }
-.bg_light_black {
-  background-color: var(--color-bg_light_black);
+.bg_black_1 {
+  background-color: var(--color-bg_black_1);
 }
-
+.bg_white_1{
+  background-color: var(--color-bg_white_1);
+}
 .bg_red {
   background-color: var(--color-bg_red);
 }
