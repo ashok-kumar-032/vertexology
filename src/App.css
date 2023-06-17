@@ -6,3 +6,7 @@
   list-style: none !important;
   scroll-behavior: smooth !important;
 }
+
+.pointer {
+  cursor: pointer;
+}
