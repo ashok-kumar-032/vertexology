@@ -6,15 +6,31 @@ import youtube from "../assets/img/youtube.svg";
 import facebook from "../assets/img/facebook.svg";
 import twiter from "../assets/img/twiter.svg";
 import linkedin from "../assets/img/linkedin.svg";
+import footer_full from "../assets/img/footer_full.svg";
+import footer_full_1 from "../assets/img/footer_full_1.svg";
+import footer_gol_big from "../assets/img/footer_gol_big.png";
+import footer_gol_s from "../assets/img/footer_gol_s.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Utn = () => {
   return (
-    <section className="footer_back">
-      <Container className="py-5 my-5">
+    <section className="footer_back position-relative">
+      <div className="position-absolute start-0 top-0 ps-lg-5 pt-lg-3 d-none d-sm-block">
+        <img src={footer_full} alt="footer_full" />
+      </div>
+      <div className="position-absolute end-0 bottom-0 pb-5 mb-4 pe-5 d-none d-sm-block">
+        <img src={footer_full_1} alt="footer_full_1" />
+      </div>
+      <div className="position-absolute footer_gol_big">
+        <img src={footer_gol_big} alt="footer_gol_big" />
+      </div>
+      <div className="position-absolute footer_gol_s d-none d-lg-block">
+        <img src={footer_gol_s} alt="footer_gol_s" />
+      </div>
+      <Container className="py-5">
         <Row>
           <Col lg={7}>
-            <img src={nav_logo} alt="nav_logo" />
+            <img className="pointer" src={nav_logo} alt="nav_logo" />
             <p className="fw-900 ff_Heavy clr_black fs_xl text-uppercase text_shadow lh_83 mb-0 pt-5">
               UTN VULPUTATE<span className="d-block">RUTRUM BIBEND PURU.</span>
             </p>
@@ -23,7 +39,7 @@ const Utn = () => {
               in aliquam. Cursus nibh enim sed et, mauris morbi. Faucibus
               viverra et diam sit cursus.
             </p>
-            <div className="email_btn w-50 d-flex justify-content-between align-items-center">
+            <div className="email_btn  email_w d-flex justify-content-between align-items-center flex-column flex-sm-row">
               <div className="ps-3">
                 <span>
                   <svg
@@ -50,49 +66,74 @@ const Utn = () => {
               </button>
             </div>
           </Col>
-          <Col lg={5} className=" d-flex justify-content-end">
-            <div className=" d-flex flex-column">
-              <img src={insta} alt="insta" width={39} height={39} />
-              <img className="mt-3" src={Be} alt="Be" width={39} height={39} />
-              <img
-                className="mt-3"
-                src={youtube}
-                alt="youtube"
-                width={39}
-                height={39}
-              />
-              <img
-                className="mt-3"
-                src={facebook}
-                alt="facebook"
-                width={39}
-                height={39}
-              />
-              <img
-                className="mt-3"
-                src={twiter}
-                alt="twiter"
-                width={39}
-                height={39}
-              />
-              <img
-                className="mt-3"
-                src={linkedin}
-                alt="linkedin"
-                width={39}
-                height={39}
-              />
+          <Col lg={5} className=" d-flex justify-content-lg-end">
+            <div className="d-flex flex-row flex-lg-column mt-4">
+              <a href="#">
+                <img
+                  className="footer_hover"
+                  src={insta}
+                  alt="insta"
+                  width={39}
+                  height={39}
+                />
+              </a>
+              <a href="#">
+                {" "}
+                <img
+                  className="mt-lg-3 ms-3 ms-lg-0 footer_hover"
+                  src={Be}
+                  alt="Be"
+                  width={39}
+                  height={39}
+                />
+              </a>
+              <a href="#">
+                <img
+                  className="mt-lg-3 ms-3 ms-lg-0 footer_hover"
+                  src={youtube}
+                  alt="youtube"
+                  width={39}
+                  height={39}
+                />
+              </a>
+              <a href="#">
+                <img
+                  className="mt-lg-3 ms-3 ms-lg-0 footer_hover"
+                  src={facebook}
+                  alt="facebook"
+                  width={39}
+                  height={39}
+                />
+              </a>
+              <a href="#">
+                <img
+                  className="mt-lg-3 ms-3 ms-lg-0 footer_hover"
+                  src={twiter}
+                  alt="twiter"
+                  width={39}
+                  height={39}
+                />
+              </a>
+              <a href="#">
+                <img
+                  className="mt-lg-3 ms-3 ms-lg-0 footer_hover"
+                  src={linkedin}
+                  alt="linkedin"
+                  width={39}
+                  height={39}
+                />
+              </a>
             </div>
           </Col>
         </Row>
       </Container>
       <hr className="footer_line" />
       <Container>
-        <div>
-          <p className="fw_400 fs_sm ff_Bold ff_Medium clr_black opacity">
+        <div className=" d-flex align-items-center justify-content-between">
+          <p className="fw_400 fs_sm ff_Bold ff_Medium clr_black opacity_6">
             Copyright ©2022 | ABA
           </p>
-          <p className="fw_400 fs_sm ff_Bold ff_Medium clr_black opacity">
+          <p className="fw_400 fs_sm ff_Bold ff_Medium clr_black opacity_6">
             All Rights Reserved.
           </p>
         </div>
