@@ -35,6 +35,7 @@
   font-family: "Regular" !important;
 }
 :root {
+
   --fs-2xl: 122px;
   --fs-xl: 65px;
   --fs-lg: 45px;
@@ -111,6 +112,10 @@
 }
 
 /* font_size */
+
+.fs_3xl {
+  font-size: var(--fs-3xl);
+}
 
 .fs_2xl {
   font-size: var(--fs-2xl);
