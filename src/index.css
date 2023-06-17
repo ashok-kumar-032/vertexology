@@ -1,124 +1,99 @@
 @font-face {
-  font-family: 'Bold';
+  font-family: "Bold";
   src: url(../src/assets/font/Gilroy-Bold.ttf);
 }
-
 @font-face {
-  font-family: 'Heavy';
+  font-family: "Heavy";
   src: url(../src/assets/font/Gilroy-Heavy.ttf);
 }
-
 @font-face {
-  font-family: 'Light';
+  font-family: "Light";
   src: url(../src/assets/font/Gilroy-Light.ttf);
 }
-
 @font-face {
-  font-family: 'Medium';
+  font-family: "Medium";
   src: url(../src/assets/font/Gilroy-Medium.ttf);
 }
-
 @font-face {
-  font-family: 'Regular';
+  font-family: "Regular";
   src: url(../src/assets/font/Gilroy-Regular.ttf);
 }
-
 /* font-family*/
 .ff_Bold {
-  font-family: 'Bold' !important;
+  font-family: "Bold" !important;
 }
-
 .ff_Heavy {
-  font-family: 'Heavy' !important;
+  font-family: "Heavy" !important;
 }
-
 .ff_Light {
-  font-family: 'Light' !important;
+  font-family: "Light" !important;
 }
-
 .ff_Medium {
-  font-family: 'Medium' !important;
+  font-family: "Medium" !important;
 }
-
 .ff_Regular {
-  font-family: 'Regular' !important;
+  font-family: "Regular" !important;
 }
-
 :root {
-
   --fs-2xl: 122px;
   --fs-xl: 65px;
   --fs-lg: 45px;
   --fs-md: 20px;
   --fs-sm: 16px;
   --fs-xsm: 14px;
-
   --color-clr_blue: #000000;
-  --color-clr_white: #FFFFFF;
-  --color-clr_white_1: #F2F2F2;
-  --color-clr_white_2: #E1E1E1;
-  --color-clr_red: #C51303;
-  --color-clr_sky: #42FFFF;
+  --color-clr_white: #ffffff;
+  --color-clr_white_1: #f2f2f2;
+  --color-clr_white_2: #e1e1e1;
+  --color-clr_red: #c51303;
+  --color-clr_sky: #42ffff;
   --color-bg_red_aco: #841002;
-  --color-clr_grey: #A6A6A6;
+  --color-clr_grey: #a6a6a6;
   --color-clr_grey_1: #878787;
   --color-bg_black_aco: #232323;
-  --color-bg_on_red: #E80F0F;
+  --color-bg_on_red: #e80f0f;
   --color-bg_black: #000000;
-  --color-bg_red: #C51303;
+  --color-bg_red: #c51303;
   --color-bg_light_black: #121212;
-  --color-clr_footer: #B7BCC0;
-  --color-clr_light_blue: #3671E9;
+  --color-clr_footer: #b7bcc0;
+  --color-clr_light_blue: #3671e9;
 }
-
 .clr_blue {
   color: var(--color-clr_blue) !important;
 }
-
 .clr_white {
   color: var(--color-clr_white) !important;
 }
-
 .clr_white_1 {
   color: var(--color-clr_white_1) !important;
 }
-
 .clr_white_2 {
   color: var(--color-clr_white_2) !important;
 }
-
 .bg_on_red {
   background-color: var(--color-bg_on_red) !important;
 }
-
 .clr_red {
   color: var(--color-clr_red) !important;
 }
-
 .clr_sky {
   color: var(--color-clr_sky) !important;
 }
-
 .clr_grey {
   color: var(--color-clr_grey) !important;
 }
-
 .bg_black_aco {
   background-color: var(--color-bg_black_aco) !important;
 }
-
 .clr_grey {
   color: var(--color-clr_grey) !important;
 }
-
 .clr_grey_1 {
   color: var(--color-clr_grey_1) !important;
 }
-
 .bg_black {
   background-color: var(--color-bg_black) !important;
 }
-
 .bg_light_black {
   background-color: var(--color-bg_light_black);
 }
@@ -140,43 +115,32 @@
 .fs_2xl {
   font-size: var(--fs-2xl);
 }
-
 .fs_xl {
   font-size: var(--fs-xl);
 }
-
 .fs_lg {
   font-size: var(--fs-lg);
 }
-
 .fs_sm {
   font-size: var(--fs-sm);
 }
-
 .fs_xsm {
   font-size: var(--fs-xsm);
 }
-
-
 /* font-weight */
 .fw_400 {
   font-weight: 400;
 }
-
 .fw_500 {
   font-weight: 500;
 }
-
 .fw_700 {
   font-weight: 700 !important;
 }
-
 .fw_900 {
   font-weight: 900 !important;
 }
-
-@media (min-width:768px) {
-
+@media (min-width: 768px) {
   :root {
     --fs-2xl: 122px;
     --fs-xl: 65px;
@@ -186,9 +150,7 @@
     --fs-xsm: 14px;
   }
 }
-
-@media (min-width:992px) {
-
+@media (min-width: 992px) {
   :root {
     --fs-2xl: 122px;
     --fs-xl: 65px;
@@ -198,8 +160,7 @@
     --fs-xsm: 14px;
   }
 }
-
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   :root {
     --fs-2xl: 122px;
     --fs-xl: 65px;
@@ -209,8 +170,7 @@
     --fs-xsm: 14px;
   }
 }
-
-@media (min-width:1330px) {
+@media (min-width: 1330px) {
   :root {
     --fs-2xl: 122px;
     --fs-xl: 65px;
@@ -220,8 +180,7 @@
     --fs-xsm: 14px;
   }
 }
-
-@media (min-width:1400px) {
+@media (min-width: 1400px) {
   :root {
     --fs-2xl: 122px;
     --fs-xl: 65px;
