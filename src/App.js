@@ -8,15 +8,14 @@ import Utn from "./components/Utn";
 import Sed from "./components/Sed";
 import John from "./components/John";
 import Tempor from "./components/Tempor";
+import Imagesection from "./components/Imagesection";
 
 function App() {
   return (
     <div className="App overflow-hidden">
       <Hero />
       <Ourportfolios />
-      <Sed />
-      <Tempor />
-      <John />
+      <Imagesection/>
       <Utn />
     </div>
   );

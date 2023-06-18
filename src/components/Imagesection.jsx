@@ -13,7 +13,7 @@ const Imagesection = () => {
             <img src={first} alt="first" className="w-100" />
           </Col>
           <Col lg={6} className="p-0">
-            <div className="bg_black_1 h-100 sedmtl_200 position-relative">
+            <div className="bg_black h-100 sedmtl_200 position-relative">
               <p className="ff_Heavy fw_900 fs_xl clr_white lh_82 sedmw_498px text-uppercase mb-1">
                 Sed volutpat erat dignissim iaculis aenean
               </p>
@@ -50,7 +50,7 @@ const Imagesection = () => {
             <img src={man} alt="man" className="w-100" />
           </Col>
           <Col lg={6} className="p-0">
-            <div className="bg_black_1 h-100 johnmtl position-relative">
+            <div className="bg_black h-100 johnmtl position-relative">
               <p className="ff_Light fw_400 fs_sm clr_white">About me</p>
               <p className="ff_Heavy fw_900 fs_xl clr_white fs_lg sedmw_498px text-uppercase mb-1">
                 John Smith

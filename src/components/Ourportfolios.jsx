@@ -47,7 +47,7 @@ const Ourportfolios = () => {
             </Col>
           </Row>
           <div className="space_200px leftline"></div>
-          <div className="d-flex align-items-center justify-content-between mb-4">
+          <div className="d-flex flex-column flex-sm-row align-items-center justify-content-between mb-4">
             <p className="ff_Heavy fw_900 text-uppercase fs_xl clr_black mb-0">
               Our Portfolios
             </p>
